@@ -1,4 +1,5 @@
 ﻿{
-    "AzureAiChatEndpoint": "AZURE_AI_CHAT_ENDPOINT",
-    "AzureAiChatKey": "AZURE_AI_CHAT_KEY"
+    "AzureOpenAiEndpoint": "AZURE_OPENAI_ENDPOINT",
+    "AzureOpenAiKey": "AZURE_OPENAI_KEY",
+    "AzureOpenAiDeployment": "AZURE_OPENAI_DEPLOYMENT"
 }

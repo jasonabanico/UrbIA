@@ -1,5 +1,5 @@
 ﻿using Azure;
-using Azure.AI.Inference;
+using Azure.AI.OpenAI;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
@@ -19,30 +19,32 @@ namespace Urbia.Services
 
         public async Task<string> ChatAsync(string systemMessage, string userMessage)
         {
-            var endpoint = new Uri(_configuration["AzureAiChatEndpoint"]);
-            var credential = new AzureKeyCredential(_configuration["AzureAiChatKey"]);
+            var uri = new Uri(_configuration["AzureOpenAiEndpoint"]);
+            var credential = new AzureKeyCredential(_configuration["AzureOpenAiKey"]);
+            var deployment = _configuration["AzureOpenAiDeployment"];
 
-            var client = new ChatCompletionsClient(endpoint, credential, new ChatCompletionsClientOptions());
+            var client = new OpenAIClient(uri, credential);
 
-            var requestOptions = new ChatCompletionsOptions()
+            ChatCompletionsOptions options = new ChatCompletionsOptions()
             {
-                Messages =
-                {
-                    new ChatRequestSystemMessage(systemMessage),
-                    new ChatRequestUserMessage(userMessage),
+                Messages = { 
+                    new ChatMessage(ChatRole.System, systemMessage),
+                    new ChatMessage(ChatRole.User, userMessage)
                 },
+                Temperature = (float)0.7,
+                MaxTokens = 800,
+                NucleusSamplingFactor = (float)0.95,
+                FrequencyPenalty = 0,
+                PresencePenalty = 0,
             };
 
-            try
-            {
-                Response<ChatCompletions> response = client.Complete(requestOptions);
-                return response.Value.Choices[0].Message.Content;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-                return string.Empty;
-            }
+            Response<ChatCompletions> response =
+                await client.GetChatCompletionsAsync(
+                    deploymentOrModelName: deployment,
+                    options);
+
+            var completions = response.Value;
+            return completions.Choices[0].Message.Content;
         }
     }
 }
