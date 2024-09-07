@@ -25,7 +25,7 @@ namespace Urbia.Services
         {
             var data = ReadFile(filename);
             var systemMessage = $"You are providing {insightType} insight suggestion for this data.";
-            var userMessage = $"In 3 sentences, provide {insightType} insight suggestions for this data: {data}";
+            var userMessage = $"In 3 sentences, provide {insightType} insight suggestions for this data, taken from file {filename}: {data}";
             var output = await _chatService.ChatAsync(systemMessage, userMessage);
             return (data, output);
         }

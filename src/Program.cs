@@ -8,7 +8,8 @@ namespace Urbia
     {
         private static Dictionary<string, string> _insightInputFiles = new Dictionary<string, string>()
         {
-            { "Safety Insights", "VICTORIAN_ROAD_CRASH_DATA - reduced.geojson" }
+            //{ "Safety Insights", "VICTORIAN_ROAD_CRASH_DATA - excerpt.geojson" },
+            { "Capacity Forcest Insights", "Traffic_Volume - excerpt.geojson" }
         };
 
         static void Main(string[] args)
@@ -39,7 +40,7 @@ namespace Urbia
                 Console.WriteLine();
                 (var data, var output) = insightsProcessor.ProcessInsightAsync(insightType, filename).Result;
                 Console.WriteLine($"Data: \n{data}");
-                Console.WriteLine($"Insight: \n{output}");
+                Console.WriteLine($"{insightType} Suggestions: \n{output}");
             }
         }
     }
