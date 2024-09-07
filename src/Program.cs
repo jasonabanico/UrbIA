@@ -6,6 +6,11 @@ namespace Urbia
 {
     public class Program
     {
+        private static Dictionary<string, string> _insightInputFiles = new Dictionary<string, string>()
+        {
+            { "Safety Insights", "VICTORIAN_ROAD_CRASH_DATA - reduced.geojson" }
+        };
+
         static void Main(string[] args)
         {
             IConfiguration config = new ConfigurationBuilder()
@@ -18,21 +23,24 @@ namespace Urbia
                 .AddLogging()
                 .AddSingleton(config)
                 .AddSingleton<IChatService, ChatService>()
+                .AddSingleton<IInsightsProcessor, InsightsProcessor>()
                 .BuildServiceProvider();
 
             Console.WriteLine("Urbia Proof-of-Concept");
-            Console.WriteLine("--------------------------");
-            Console.WriteLine();
-            Console.WriteLine("Retrieval Augmented Generation");
-            Console.WriteLine();
-            Console.WriteLine("Traffice Accident Data");
-            Console.WriteLine();
-            Console.WriteLine("Patronage by Day Type and by Mode");
-            Console.WriteLine();
+            Console.WriteLine("----------------------");
             Console.WriteLine();
 
-            var chatService = new ChatService(config, null);
-            var result = chatService.ChatAsync("", "give me a test message").Result;
+            var insightsProcessor = serviceProvider.GetService<IInsightsProcessor>();
+
+            foreach (var insightType in _insightInputFiles.Keys)
+            {
+                var filename = _insightInputFiles[insightType];
+                Console.WriteLine($"Sample {insightType} from data {filename}.");
+                Console.WriteLine();
+                (var data, var output) = insightsProcessor.ProcessInsightAsync(insightType, filename).Result;
+                Console.WriteLine($"Data: \n{data}");
+                Console.WriteLine($"Insight: \n{output}");
+            }
         }
     }
 }
