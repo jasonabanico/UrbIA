@@ -1,0 +1,229 @@
+{
+    "help": "https://discover.data.vic.gov.au/api/3/action/help_show?name=datastore_search",
+    "success": true,
+    "result": {
+        "include_total": true,
+        "limit": 5,
+        "records_format": "objects",
+        "resource_id": "978c4fcd-2009-4eff-82c0-b8db7b2de039",
+        "total_estimation_threshold": null,
+        "records": [
+            {
+                "_id": 1,
+                "Business_Date": "2023-07-10",
+                "Day_of_Week": "Monday",
+                "Day_Type": "Normal Weekday",
+                "Mode": "Metro",
+                "Train_Number": "6001",
+                "Line_Name": "Sunbury",
+                "Group": "Northern",
+                "Direction": "D",
+                "Origin_Station": "Flinders Street",
+                "Destination_Station": "Sunbury",
+                "Station_Name": "Sunbury",
+                "Station_Latitude": "-37.57909097",
+                "Station_Longitude": "144.7273188",
+                "Station_Chainage": "38279",
+                "Stop_Sequence_Number": "15",
+                "Arrival_Time_Scheduled": "05:48:00",
+                "Departure_Time_Scheduled": "05:48:00",
+                "Passenger_Boardings": "0",
+                "Passenger_Alightings": "0",
+                "Passenger_Arrival_Load": "0",
+                "Passenger_Departure_Load": "0"
+            },
+            {
+                "_id": 2,
+                "Business_Date": "2023-07-10",
+                "Day_of_Week": "Monday",
+                "Day_Type": "Normal Weekday",
+                "Mode": "Metro",
+                "Train_Number": "6003",
+                "Line_Name": "Sunbury",
+                "Group": "Northern",
+                "Direction": "D",
+                "Origin_Station": "Flinders Street",
+                "Destination_Station": "Sunbury",
+                "Station_Name": "Sunbury",
+                "Station_Latitude": "-37.57909097",
+                "Station_Longitude": "144.7273188",
+                "Station_Chainage": "38279",
+                "Stop_Sequence_Number": "15",
+                "Arrival_Time_Scheduled": "06:08:00",
+                "Departure_Time_Scheduled": "06:08:00",
+                "Passenger_Boardings": "0",
+                "Passenger_Alightings": "0",
+                "Passenger_Arrival_Load": "0",
+                "Passenger_Departure_Load": "0"
+            },
+            {
+                "_id": 3,
+                "Business_Date": "2023-07-10",
+                "Day_of_Week": "Monday",
+                "Day_Type": "Normal Weekday",
+                "Mode": "Metro",
+                "Train_Number": "6005",
+                "Line_Name": "Sunbury",
+                "Group": "Northern",
+                "Direction": "D",
+                "Origin_Station": "Flinders Street",
+                "Destination_Station": "Sunbury",
+                "Station_Name": "Sunbury",
+                "Station_Latitude": "-37.57909097",
+                "Station_Longitude": "144.7273188",
+                "Station_Chainage": "38279",
+                "Stop_Sequence_Number": "15",
+                "Arrival_Time_Scheduled": "06:28:00",
+                "Departure_Time_Scheduled": "06:28:00",
+                "Passenger_Boardings": "0",
+                "Passenger_Alightings": "10",
+                "Passenger_Arrival_Load": "10",
+                "Passenger_Departure_Load": "0"
+            },
+            {
+                "_id": 4,
+                "Business_Date": "2023-07-10",
+                "Day_of_Week": "Monday",
+                "Day_Type": "Normal Weekday",
+                "Mode": "Metro",
+                "Train_Number": "6007",
+                "Line_Name": "Sunbury",
+                "Group": "Northern",
+                "Direction": "D",
+                "Origin_Station": "Flinders Street",
+                "Destination_Station": "Sunbury",
+                "Station_Name": "Sunbury",
+                "Station_Latitude": "-37.57909097",
+                "Station_Longitude": "144.7273188",
+                "Station_Chainage": "38279",
+                "Stop_Sequence_Number": "15",
+                "Arrival_Time_Scheduled": "06:48:00",
+                "Departure_Time_Scheduled": "06:48:00",
+                "Passenger_Boardings": "0",
+                "Passenger_Alightings": "10",
+                "Passenger_Arrival_Load": "10",
+                "Passenger_Departure_Load": "0"
+            },
+            {
+                "_id": 5,
+                "Business_Date": "2023-07-10",
+                "Day_of_Week": "Monday",
+                "Day_Type": "Normal Weekday",
+                "Mode": "Metro",
+                "Train_Number": "6009",
+                "Line_Name": "Sunbury",
+                "Group": "Northern",
+                "Direction": "D",
+                "Origin_Station": "Flinders Street",
+                "Destination_Station": "Sunbury",
+                "Station_Name": "Sunbury",
+                "Station_Latitude": "-37.57909097",
+                "Station_Longitude": "144.7273188",
+                "Station_Chainage": "38279",
+                "Stop_Sequence_Number": "15",
+                "Arrival_Time_Scheduled": "07:07:00",
+                "Departure_Time_Scheduled": "07:07:00",
+                "Passenger_Boardings": "0",
+                "Passenger_Alightings": "10",
+                "Passenger_Arrival_Load": "10",
+                "Passenger_Departure_Load": "0"
+            }
+        ],
+        "fields": [
+            {
+                "id": "_id",
+                "type": "int"
+            },
+            {
+                "id": "Business_Date",
+                "type": "text"
+            },
+            {
+                "id": "Day_of_Week",
+                "type": "text"
+            },
+            {
+                "id": "Day_Type",
+                "type": "text"
+            },
+            {
+                "id": "Mode",
+                "type": "text"
+            },
+            {
+                "id": "Train_Number",
+                "type": "text"
+            },
+            {
+                "id": "Line_Name",
+                "type": "text"
+            },
+            {
+                "id": "Group",
+                "type": "text"
+            },
+            {
+                "id": "Direction",
+                "type": "text"
+            },
+            {
+                "id": "Origin_Station",
+                "type": "text"
+            },
+            {
+                "id": "Destination_Station",
+                "type": "text"
+            },
+            {
+                "id": "Station_Name",
+                "type": "text"
+            },
+            {
+                "id": "Station_Latitude",
+                "type": "text"
+            },
+            {
+                "id": "Station_Longitude",
+                "type": "text"
+            },
+            {
+                "id": "Station_Chainage",
+                "type": "text"
+            },
+            {
+                "id": "Stop_Sequence_Number",
+                "type": "text"
+            },
+            {
+                "id": "Arrival_Time_Scheduled",
+                "type": "text"
+            },
+            {
+                "id": "Departure_Time_Scheduled",
+                "type": "text"
+            },
+            {
+                "id": "Passenger_Boardings",
+                "type": "text"
+            },
+            {
+                "id": "Passenger_Alightings",
+                "type": "text"
+            },
+            {
+                "id": "Passenger_Arrival_Load",
+                "type": "text"
+            },
+            {
+                "id": "Passenger_Departure_Load",
+                "type": "text"
+            }
+        ],
+        "_links": {
+            "start": "/api/3/action/datastore_search?resource_id=978c4fcd-2009-4eff-82c0-b8db7b2de039&limit=5",
+            "next": "/api/3/action/datastore_search?resource_id=978c4fcd-2009-4eff-82c0-b8db7b2de039&limit=5&offset=5"
+        },
+        "total": 99,
+        "total_was_estimated": false
+    }
+}

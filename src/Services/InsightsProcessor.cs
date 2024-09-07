@@ -24,9 +24,15 @@ namespace Urbia.Services
         public async Task<(string, string)> ProcessInsightAsync(string insightType, string filename)
         {
             var data = ReadFile(filename);
-            var systemMessage = $"You are providing {insightType} insight suggestion for this data.";
-            var userMessage = $"In 3 sentences, provide {insightType} insight suggestions for this data, taken from file {filename}: {data}";
-            var output = await _chatService.ChatAsync(systemMessage, userMessage);
+            var output = string.Empty;
+
+            if (!string.IsNullOrEmpty(data))
+            {
+                var systemMessage = $"You are providing {insightType} suggestions for this data.";
+                var userMessage = $"In 3 sentences, provide {insightType} suggestions for this data, taken from file {filename}: {data}";
+                output = await _chatService.ChatAsync(systemMessage, userMessage);
+            }
+
             return (data, output);
         }
 
