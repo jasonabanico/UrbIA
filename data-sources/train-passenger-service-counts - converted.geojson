@@ -1,0 +1,37 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "Output",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 144.7206452, -37.5794376 ]
+			},
+			"properties" : {
+                "_id": 1,
+                "Business_Date": "2023-07-10",
+                "Day_of_Week": "Monday",
+                "Day_Type": "Normal Weekday",
+                "Mode": "Metro",
+                "Train_Number": "6001",
+                "Line_Name": "Sunbury",
+                "Group": "Northern",
+                "Direction": "D",
+                "Origin_Station": "Flinders Street",
+                "Destination_Station": "Sunbury",
+                "Station_Name": "Sunbury",
+                "Station_Latitude": "-37.57909097",
+                "Station_Longitude": "144.7273188",
+                "Station_Chainage": "38279",
+                "Stop_Sequence_Number": "15",
+                "Arrival_Time_Scheduled": "05:48:00",
+                "Departure_Time_Scheduled": "05:48:00",
+                "Passenger_Boardings": "0",
+                "Passenger_Alightings": "0",
+                "Passenger_Arrival_Load": "0",
+                "Passenger_Departure_Load": "0"
+            }
+		}
+	]
+}
