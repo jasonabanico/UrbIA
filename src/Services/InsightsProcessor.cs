@@ -39,7 +39,7 @@ namespace Urbia.Services
         private string ReadFile(string filename)
         {
             var line = string.Empty;
-            var filePath = Path.Combine($"{AppDomain.CurrentDomain.BaseDirectory}/Data", filename);
+            var filePath = Path.Combine($"{AppDomain.CurrentDomain.BaseDirectory}/Input Data", filename);
             try
             {
                 using (StreamReader reader = new StreamReader(filePath))

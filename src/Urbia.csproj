@@ -21,19 +21,19 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Data\Mary Cairncross Scenic Reserve Dingtek PIR Counter - excerpt.txt">
+    <None Update="Input Data\Mary Cairncross Scenic Reserve Dingtek PIR Counter - excerpt.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Data\Principal_Bicycle_Network_%28PBN%29 - excerpt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Data\Principal_Bicycle_Network_%28PBN%29 - excerpt.geojson">
+    <None Update="Input Data\Principal_Bicycle_Network_(PBN) - excerpt.geojson">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Data\Traffic_Volume - excerpt.geojson">
+    <None Update="Input Data\Traffic_Volume - excerpt.geojson">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Data\train-passenger-service-counts.json">
+    <None Update="Input Data\train-passenger-service-counts.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
