@@ -28,9 +28,6 @@
     <None Update="Data\Traffic_Volume - excerpt.geojson">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Data\VICTORIAN_ROAD_CRASH_DATA - reduced.geojson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>
