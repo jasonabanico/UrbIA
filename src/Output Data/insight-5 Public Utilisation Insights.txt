@@ -1,0 +1,17 @@
+Sample Public Utilisation Insights from data Mary Cairncross Scenic Reserve Dingtek PIR Counter - excerpt.txt.
+
+Data: 
+dev_id,datetime,battery,peopleCount,nonNegPeopleCount
+dc500-3a9e,2023-07-12 06:00:00,3.64,0,0.0
+dc500-3a9e,2023-09-25 23:00:00,3.64,0,0.0
+dc500-3a9e,2023-09-26 01:00:00,3.64,500,500.0
+dc500-3a9e,2023-09-27 00:00:00,3.64,558,58.0
+dc500-3a9e,2023-10-05 01:00:00,3.62,0,0.0
+dc500-3a9e,2023-10-05 03:00:00,3.63,6,6.0
+dc500-3a9e,2023-10-05 04:00:00,3.64,6,0.0
+
+
+Public Utilisation Insights Suggestions: 
+1. The anomalously high peopleCount of 500 on 2023-09-26 at 01:00:00 suggests a possible error or unusual event that should be investigated for data accuracy.
+2. The consistent battery levels around 3.62 to 3.64 volts indicate stable device performance, but regular monitoring is recommended to ensure uninterrupted data collection.
+3. The nonNegPeopleCount often matching the peopleCount except for specific instances like 2023-09-27 and 2023-10-05 suggests that some readings may require validation to ensure accurate visitor tracking at Mary Cairncross Scenic Reserve.

@@ -36,6 +36,13 @@
     <None Update="Input Data\train-passenger-service-counts.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Input Data\VICTORIAN_ROAD_CRASH_DATA - excerpt.geojson">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Output Data\" />
   </ItemGroup>
 
 </Project>
