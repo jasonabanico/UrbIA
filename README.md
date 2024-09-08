@@ -5,6 +5,7 @@
 
 ## Features (of the fully realised vision of UrbIA)
 - **Geospatial Navigation**: Users can navigate the map using the Digital Atlas of Australia to explore data on road safety, traffic patterns, public transport usage, and more.
+- **Integration with the Digital Atlas of Australia**: The code can be enhanced to instead connect to the Digital Atlas of Australia API (https://digital.atlas.gov.au/api/search/definition/) to retrieve data sets.
 - **AI-Generated Insights**: *UrbIA* utilizes AI to provide actionable suggestions based on real-time data. These insights cover areas such as road safety improvements, infrastructure capacity needs, and sustainability measures.
 - **Crowdsourced Feedback**: Users can react to AI-generated insights by rating and offering their own suggestions, creating a collaborative environment for improving urban spaces.
   
