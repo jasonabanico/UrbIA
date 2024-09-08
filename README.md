@@ -19,7 +19,9 @@
 3. **User Interaction**: Users can view these insights, rate them, and provide feedback, fostering a collaborative approach to urban planning.
 
 ## Proof-of-Concept Code
-This code is for the proof-of-concept for generating insights from geolocated open data.
+This code is for the proof-of-concept for generating insights from geolocated open data. Raw data used can be found in the "/data-sources" folder. For use in this proof-of-concept data is pre-processed manually to match formats (geojson) and reduce size. Preprocessed data files can be found in the "src/Input Data" folder.
+
+The generated insights can be found in "src/Output Data" folder.
 
 ## Setup
 You will need to create an Azure OpenAI Account. You can learn more about it here https://learn.microsoft.com/en-us/azure/ai-services/openai/overview.
