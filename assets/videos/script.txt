@@ -1,0 +1,39 @@
+Hi. We are the Banico Family and we are proud to present our GovHack Project, UrbIA, Urban Insights Atlas.
+
+Our team approached the challenges by asking these questions.
+
+How can we use the Digital Atlas of Australia and Generative AI to have a user-friendly tool to make geospatial data accessible and empower decision making?
+
+How can we harness the power of collective wisdom to share data-informed insights to help improve our cities, in the area of safety, capacity forecasting,
+sustainability, or public service utilisation? 
+
+Using the digital atlas, geolocated data, AI, and crowdsourced wisdom, our team propose a solution we call UrbIA, the Urban Insights Atlas.
+
+Here's how it works.
+
+Users navigate the map, which uses the Digital Atlas of Australia, to access local data pertaining to their interest. For instance, road safety.
+
+As users navigate, the app pulls safety data points, such as vehicle road crash data.
+
+UrbIA will also generate safety insight suggestions through OpenAI, and present them to the user.
+
+The user can then react to these insights by providing star rating and give their own suggestions.
+
+As a prototype for GovHack, we focused on the core of the solution, which is to take geolocated data and generate sample insights. 
+
+The code for our proof-of-concept is available on Github.
+
+We ran it against various relevant data, with our selected insight types and checked the output.
+
+For Safety Insights, we used Victorian Road Crash Data. The data available provides the location, date and time, accident type, and other relevant information.
+
+Its generated suggestions included improving road lighting, implementing additional safety measures such as guardrails, and conduct targeted awareness campaigns.
+
+For Capacity Forecast Insights, we used Traffic Volume Data. The data available provides the location of the road, and the amount and type of vehicles that run through them at various times.
+
+Its generated feedback mentions that with low Average Annual Daily Traffic and truck percentage, there's no need for significant capacity upgrades. It, however,
+recommends, due to its road classification, maintaining road quality and safety measures.
+
+In our project page, we also shared other tests, such as Sustainability or Mobility Insights using Principal Bicycle Network proposed bike paths, and Train Passenger Service counts, and Public Utilisation Insights using Scenic Reserve PIR Counter statistics.
+
+We hope you like our project, Urban Insights Atlas. Thank you for watching.
